@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92A94602-49D6-4A12-92BC-00FCAC3292EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MySqlBackupTestApp</RootNamespace>
+    <AssemblyName>MySqlBackupTestApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>MySqlBackupTestApp.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Authed">
+      <HintPath>..\..\Authed.dll</HintPath>
+    </Reference>
+    <Reference Include="jose-jwt">
+      <HintPath>..\..\jose-jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\Downloads\RANDOM DOWNLOADS\Kon-Boot for Windows 2.5.0 Retail [deepstatus]\MySQLBackup\test\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlBackup">
+      <HintPath>..\..\..\Downloads\RANDOM DOWNLOADS\Kon-Boot for Windows 2.5.0 Retail [deepstatus]\MySQLBackup\test\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCompareFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompareFile.Designer.cs">
+      <DependentUpon>FormCompareFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDatabaseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDatabaseInfo.Designer.cs">
+      <DependentUpon>FormDatabaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDumpFileViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDumpFileViewer.Designer.cs">
+      <DependentUpon>FormDumpFileViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQueryBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQueryBrowser.Designer.cs">
+      <DependentUpon>FormQueryBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTestCustomTablesExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTestCustomTablesExport.Designer.cs">
+      <DependentUpon>FormTestCustomTablesExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTestSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTestSimple.Designer.cs">
+      <DependentUpon>FormTestSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlExpress.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCompareFile.resx">
+      <DependentUpon>FormCompareFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDatabaseInfo.resx">
+      <DependentUpon>FormDatabaseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDumpFileViewer.resx">
+      <DependentUpon>FormDumpFileViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQueryBrowser.resx">
+      <DependentUpon>FormQueryBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTestCustomTablesExport.resx">
+      <DependentUpon>FormTestCustomTablesExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTestSimple.resx">
+      <DependentUpon>FormTestSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

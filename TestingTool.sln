@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlBackup", "MySqlBackupTestApp\MySqlBackup.csproj", "{92A94602-49D6-4A12-92BC-00FCAC3292EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication", "Authentication\Authentication.csproj", "{DDF197A7-60CC-435F-98E1-171AB0D77F21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainHub", "MainHub\MainHub.csproj", "{F64C7DAB-D389-4AFB-A920-404198BEA547}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92A94602-49D6-4A12-92BC-00FCAC3292EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A94602-49D6-4A12-92BC-00FCAC3292EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A94602-49D6-4A12-92BC-00FCAC3292EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A94602-49D6-4A12-92BC-00FCAC3292EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF197A7-60CC-435F-98E1-171AB0D77F21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF197A7-60CC-435F-98E1-171AB0D77F21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF197A7-60CC-435F-98E1-171AB0D77F21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF197A7-60CC-435F-98E1-171AB0D77F21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F64C7DAB-D389-4AFB-A920-404198BEA547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64C7DAB-D389-4AFB-A920-404198BEA547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64C7DAB-D389-4AFB-A920-404198BEA547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64C7DAB-D389-4AFB-A920-404198BEA547}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFD1EC0A-F76D-4F4A-BB0B-E9A38429DBF8}
+	EndGlobalSection
+EndGlobal
